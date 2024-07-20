@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="images/portfolio.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width:430px)">
+    <link rel="shortcut icon" href="images/portfolio.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1>Port<span class="folio">folio</span></h1>
+            <ul>
+                <li>
+                    <h3><a href="#about">About</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#work">Work</a></h3>
+                </li>
+                <li>
+                    <h3><a href="contact.html">Contact</a></h3>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Border -->
+    <div class="border"></div>
+
+    <!-- Main -->
+    <main id="main">
+        <img class="main-visual" src="images/pc-w1000.png">
+    </main>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About</h2>
+        <div class="about-container">
+            <img class="about-visual" src="images/main_visual.png">
+            <div class="about-text">
+                <h3>山内　清志（Kiyoshi Yamauchi）</h3>
+                <p>　転勤を機に沖縄県から宮崎県に移住して約1年半になります。<br>
+                    　これまで一般事務の仕事をしてきましたが、以前から興味のあったWebエンジニアの仕事がしたいという思いが強くなり、一念発起で退職。2023年12月から2024年6月まで職業訓練に通い、Webエンジニアに必要な知識と技術を学んできました。<br>
+                    　趣味はランニング、サッカー等のスポーツ全般に、映画鑑賞。また、機械をいじることも好きなので自分の車のメンテナンスも趣味として楽しんでいます。</p>
+            </div>
+        </div>
+        <div class="about-skill">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>学習言語</th>
+                        <td>HTML、CSS、JavaScript、PHP、MySQL</td>
+                    </tr>
+                    <tr>
+                        <th>保有資格</th>
+                        <td>Webクリエイター能力認定試験（HTML5）エキスパート</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img id="badge" src="images/html5-badge.png" alt="badge">
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+        <h2>Work</h2>
+        <div class="work-container">
+            <div class="card">
+                <i class="fa-solid fa-window-maximize"></i>
+                <h3>Website</h3>
+                <div class="paragraph">
+                    <p>ポートフォリオ用のサイトを作成しました。</p>
+                    <p>制作日：2024年6月</p>
+                    <p>制作期間：8日間</p>
+                    <p>使用言語：HTML、CSS、JavaScript</p>
+                </div>
+                <div class="details">
+                    <a class="details-button" href="work-portfolio.html">Details</a>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-network-wired"></i>
+                <h3>Web Application</h3>
+                <div class="paragraph">
+                    <p>Web APIを使った、検索サービスを作成しました。</p>
+                    <p>制作日：2024年6月</p>
+                    <p>制作期間：2日間</p>
+                    <p>使用言語：HTML、CSS、JavaScript、PHP</p>
+                </div>
+                <div class="details">
+                    <a class="details-button" href="php/yahoo-api.php" target="_blank">Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fadeIn">
+        <h3>お気軽にお問い合わせください。</h3>
+        <p><a class="contact-button" href="contact.html">Contact</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <!-- ページトップに移動するためのボタン -->
+        <p id="page-top"><a href="#">Page Top</a></p>
+        <p id="small"><small>
+                &copy;2024 Kiyoshi Yamauchi
+            </small></p>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

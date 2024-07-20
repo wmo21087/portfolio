@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+}
+
+/* border */
+.border {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    height: 50%;
+    background: #ffffff;
+    background-image: linear-gradient(45deg, #000000 25%, transparent 0),
+        linear-gradient(45deg, transparent 75%, #000000 0),
+        linear-gradient(45deg, #000000 25%, transparent 0),
+        linear-gradient(45deg, transparent 75%, #000000 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px,
+        15px 15px, 30px 30px;
+}
+
+/* header */
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    margin: 0 auto 0 auto;
+}
+
+nav h1 {
+    margin: 0 0;
+    font-size: 45px;
+}
+
+li {
+    margin: 0 10px;
+}
+
+li a {
+    padding: 2.5px;
+}
+
+
+/* Border */
+.border {
+    border: none;
+}
+
+/* main section */
+#main {
+    box-sizing: border-box;
+    height: auto;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+#main_visual {
+    width: 100%;
+}
+
+div {
+    text-align: center;
+}
+
+/* about section*/
+#about {
+    width: 100%;
+    padding: 0 0;
+    margin-top: 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#about h2 {
+    font-size: 40px;
+    margin: 0 0;
+}
+
+.about-visual {
+    width: 100px;
+}
+
+.about-text {
+    width: 100%;
+}
+
+.about-text h3 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.about-text p {
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: 0 20px 10px 20px;
+    word-break: normal;
+}
+
+.about-skill table {
+    margin-bottom: 20px;
+}
+
+#badge {
+    display: none;
+}
+
+.button {
+    width: 30%;
+    font-size: 0.6rem;
+}
+
+.button:hover {
+    background-color: transparent;
+    border: 2px solid burlywood;
+    cursor: pointer;
+}
+
+.button a {
+    color: #ffffff;
+    text-decoration-line: none;
+}
+
+/* Work Section  */
+#work {
+    width: 100%;
+    padding: 0 0;
+    margin-top: 0;
+}
+
+#work h2 {
+    font-size: 40px;
+}
+
+.work-container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.card p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.card {
+    height: 100%;
+    width: 60%;
+    background-color: #393939;
+    padding: 20px 35px;
+    margin: 10px auto;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card i {
+    color: burlywood;
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+.paragraph p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.card .button {
+    background-color: burlywood;
+    padding: 13px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid burlywood;
+    cursor: pointer;
+}
+
+/* Contact Section */
+#contact {
+    width: 100%;
+    padding: 0 0;
+    margin-top: 20px;
+    background-color: #000000;
+}
+
+#contact p {
+    font-size: 16px;
+}
+
+.contact-button {
+    font-size: 0.6rem;
+}
+
+/*========= Work-PortfolioページのCSS ===============*/
+#work-details h2 {
+    font-size: 40px;
+}
+
+/*========= ContactページのCSS ===============*/
+#contact2 .head h2 {
+    font-size: 40px;
+}

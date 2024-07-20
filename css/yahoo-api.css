@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+:root {
+  font-size: 16px;
+  font-family: "M PLUS 1", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+  line-height: normal;
+  overflow-x: hidden;
+}
+
+#main h1 {
+  font-family: "Kaisei Opti", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: center;
+  word-break: keep-all;
+}
+
+#main h1 a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.h1 {
+  color: red;
+}
+
+#search {
+  text-align: center;
+}
+
+#search label {
+  word-break: keep-all;
+}
+
+#keyword {
+  /* width: 500px; */
+  width: 50%; 
+  min-width: 300px;
+  padding: 5px 0;
+  /* margin-bottom: 15px; */
+  border: 1.5px solid #000000;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 auto 15px auto;
+}
+
+#location {
+  width: 128px;
+  padding: 5px 0;
+  border: 1.5px solid #000000;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#search-button {
+  width: 128px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#search-button:hover {
+  transition: 0.3s;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#error-message {
+  font-size: 1.5rem;
+}
+
+.hit {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#output {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  border-top: 3px dashed #000000;  
+  border-bottom: 3px dashed #000000;
+  margin-bottom: -3px;
+}
+
+.output {
+  max-width: 1000px;
+  margin: 15px auto;
+}
+
+.output p {
+  margin: 0 40px;
+}
+
+.yomi, .name {
+  text-align: center;
+}
+
+.output h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.image {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  height: auto;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 1.5px solid #000000;
+  margin: 0 10px;
+}
+
+.pagination a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#copyright {
+  text-align: center;
+}
+
+/*========= ページトップに移動のためのCSS ===============*/
+/*リンクの形状*/
+#page-top a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.6rem;
+  transition: all 0.3s;
+  border: 1.5px solid #000000;
+}
+
+#page-top a:hover {
+  /* background: #ffffff; */
+  color: red;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+  position: fixed;
+  right: 10px;
+  z-index: 2;
+  /*はじめは非表示*/
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+
+#page-top.UpMove {
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#page-top.DownMove {
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+} 
+
+/* レスポンシブデザインのためのCSS */
+@media screen and (max-width:430px) { 
+  /*　画面サイズが430pxからはここを読み込む　*/
+    :root {
+      font-size: 0.9rem;
+    }
+    
+    #main h1 {
+      font-size: 1.8rem;
+      word-break: keep-all;
+    }
+    
+    #search {
+      font-size: 0.9rem;
+    }
+
+    #keyword {
+      max-width: 80%;
+      min-width: 250px;
+      font-size: 0.9rem;  
+    }
+
+    #location {
+      max-width: 30%;
+      font-size: 0.9rem;
+      text-align-last: center;
+    }
+    
+    #search-button {
+      max-width: 20%;
+    }
+    
+    #search-button:hover {
+      transform: scale(1.1);
+    }
+    
+    #error-message {
+      font-size: 0.9rem;
+    }
+
+    .hit {
+      font-size: 0.9rem;
+    }
+    
+    #output {
+      max-width: 100vw;
+      margin: 0 calc(50% - 50vw);
+      border-top: 1.5px dashed #000000;  
+      border-bottom: 1.5px dashed #000000;
+      margin-bottom: -1px;
+    }
+    
+    .output {
+      max-width: 430px;
+      font-size: 0.9rem;
+      /* margin: 0 20px; */
+      word-break: break-all;
+    }
+    
+    .output h2 {
+      font-size: 1.2rem ;
+    }
+
+    .output p {
+      max-width: 430px;
+    }
+    
+    .pagination a {
+      font-size: 0.9rem;
+    }
+}
