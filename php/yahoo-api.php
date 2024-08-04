@@ -158,7 +158,9 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && (isset($ac))) {
                     echo '<p class="yomi">' . htmlspecialchars($place['Property']['Yomi']) . '</p>';
                     echo '<h2 class="name">' . htmlspecialchars($place['Name']) . '</h2>';
                     echo '<img class="image" src="' . htmlspecialchars($place['Property']['LeadImage']) . '">';
-                    echo '<p class="catchcopy">' . htmlspecialchars($place['Property']['CatchCopy']) . '</p>';
+                    if (isset($place['Property']['CatchCopy'])) {
+                        echo '<p class="catchcopy">' . htmlspecialchars($place['Property']['CatchCopy']) . '</p>';
+                    } 
                     echo '<p class="address">住所：' . htmlspecialchars($place['Property']['Address']) . '</p>';
                     echo '<p class="tell">電話：' . htmlspecialchars($place['Property']['Tel1']) . '</p>';
                     if ($place['Property']['Detail']['PcUrl1'] != '') {
